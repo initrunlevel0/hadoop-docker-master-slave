@@ -101,6 +101,7 @@ RUN service sshd start && $HADOOP_PREFIX/etc/hadoop/hadoop-env.sh && $HADOOP_PRE
 
 
 ADD add-slave.sh /sbin/add-slave
+ADD get-ssh-key.sh /sbin/get-ssh-key
 
 CMD ["/etc/bootstrap.sh", "-d"]
 
